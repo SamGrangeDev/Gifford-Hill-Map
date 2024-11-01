@@ -52,20 +52,20 @@ var lyr_GHConceptMasterplanPrecinct1A_3 = new ol.layer.Image({
                                 imageExtent: [15500457.765700, -4186013.118600, 15502679.690200, -4183405.822000]
                             })
                         });
-var format_MasterplanSubPrecint1BBoundary_4 = new ol.format.GeoJSON();
-var features_MasterplanSubPrecint1BBoundary_4 = format_MasterplanSubPrecint1BBoundary_4.readFeatures(json_MasterplanSubPrecint1BBoundary_4, 
+var format_MasterplanPrecint1BBoundary_4 = new ol.format.GeoJSON();
+var features_MasterplanPrecint1BBoundary_4 = format_MasterplanPrecint1BBoundary_4.readFeatures(json_MasterplanPrecint1BBoundary_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_MasterplanSubPrecint1BBoundary_4 = new ol.source.Vector({
+var jsonSource_MasterplanPrecint1BBoundary_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_MasterplanSubPrecint1BBoundary_4.addFeatures(features_MasterplanSubPrecint1BBoundary_4);
-var lyr_MasterplanSubPrecint1BBoundary_4 = new ol.layer.Vector({
+jsonSource_MasterplanPrecint1BBoundary_4.addFeatures(features_MasterplanPrecint1BBoundary_4);
+var lyr_MasterplanPrecint1BBoundary_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_MasterplanSubPrecint1BBoundary_4, 
-                style: style_MasterplanSubPrecint1BBoundary_4,
-                popuplayertitle: "Masterplan Sub-Precint 1B Boundary",
-                interactive: false,
-                title: '<img src="styles/legend/MasterplanSubPrecint1BBoundary_4.png" /> Masterplan Sub-Precint 1B Boundary'
+                source:jsonSource_MasterplanPrecint1BBoundary_4, 
+                style: style_MasterplanPrecint1BBoundary_4,
+                popuplayertitle: "Masterplan Precint 1B Boundary",
+                interactive: true,
+                title: '<img src="styles/legend/MasterplanPrecint1BBoundary_4.png" /> Masterplan Precint 1B Boundary'
             });
 var format_Zoning_5 = new ol.format.GeoJSON();
 var features_Zoning_5 = format_Zoning_5.readFeatures(json_Zoning_5, 
@@ -119,7 +119,7 @@ var lyr_GiffordHillParcelBoundary_7 = new ol.layer.Vector({
                 title: '<img src="styles/legend/GiffordHillParcelBoundary_7.png" /> Gifford Hill Parcel Boundary'
             });
 var group_Masterplans = new ol.layer.Group({
-                                layers: [lyr_GiffordHillConceptMasterplan_2,lyr_GHConceptMasterplanPrecinct1A_3,lyr_MasterplanSubPrecint1BBoundary_4,],
+                                layers: [lyr_GiffordHillConceptMasterplan_2,lyr_GHConceptMasterplanPrecinct1A_3,lyr_MasterplanPrecint1BBoundary_4,],
                                 fold: "open",
                                 title: "Masterplans"});
 var group_BaseLayer = new ol.layer.Group({
@@ -127,17 +127,17 @@ var group_BaseLayer = new ol.layer.Group({
                                 fold: "open",
                                 title: "Base Layer"});
 
-lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_GiffordHillConceptMasterplan_2.setVisible(false);lyr_GHConceptMasterplanPrecinct1A_3.setVisible(false);lyr_MasterplanSubPrecint1BBoundary_4.setVisible(false);lyr_Zoning_5.setVisible(false);lyr_ProjectOwned_Parcels_6.setVisible(true);lyr_GiffordHillParcelBoundary_7.setVisible(true);
+lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_GiffordHillConceptMasterplan_2.setVisible(false);lyr_GHConceptMasterplanPrecinct1A_3.setVisible(false);lyr_MasterplanPrecint1BBoundary_4.setVisible(false);lyr_Zoning_5.setVisible(false);lyr_ProjectOwned_Parcels_6.setVisible(true);lyr_GiffordHillParcelBoundary_7.setVisible(true);
 var layersList = [group_BaseLayer,group_Masterplans,lyr_Zoning_5,lyr_ProjectOwned_Parcels_6,lyr_GiffordHillParcelBoundary_7];
-lyr_MasterplanSubPrecint1BBoundary_4.set('fieldAliases', {'id': 'id', });
+lyr_MasterplanPrecint1BBoundary_4.set('fieldAliases', {'id': 'id', });
 lyr_Zoning_5.set('fieldAliases', {'id': 'id', 'Land use': 'Land use', });
 lyr_ProjectOwned_Parcels_6.set('fieldAliases', {'Address': 'Address', 'Zoning': 'Zoning', 'Options': 'Options', });
 lyr_GiffordHillParcelBoundary_7.set('fieldAliases', {'fid': 'fid', 'Address': 'Address', 'Gross_Ha': 'Gross_Ha', 'Zoning': 'Zoning', 'Gifford Hill Lands': 'Gifford Hill Lands', 'NDH': 'NDH', });
-lyr_MasterplanSubPrecint1BBoundary_4.set('fieldImages', {'id': 'TextEdit', });
+lyr_MasterplanPrecint1BBoundary_4.set('fieldImages', {'id': 'TextEdit', });
 lyr_Zoning_5.set('fieldImages', {'id': 'TextEdit', 'Land use': 'TextEdit', });
 lyr_ProjectOwned_Parcels_6.set('fieldImages', {'Address': 'TextEdit', 'Zoning': 'TextEdit', 'Options': 'TextEdit', });
 lyr_GiffordHillParcelBoundary_7.set('fieldImages', {'fid': 'TextEdit', 'Address': 'TextEdit', 'Gross_Ha': 'TextEdit', 'Zoning': 'TextEdit', 'Gifford Hill Lands': 'TextEdit', 'NDH': 'TextEdit', });
-lyr_MasterplanSubPrecint1BBoundary_4.set('fieldLabels', {'id': 'hidden field', });
+lyr_MasterplanPrecint1BBoundary_4.set('fieldLabels', {'id': 'hidden field', });
 lyr_Zoning_5.set('fieldLabels', {'id': 'hidden field', 'Land use': 'inline label - visible with data', });
 lyr_ProjectOwned_Parcels_6.set('fieldLabels', {'Address': 'hidden field', 'Zoning': 'hidden field', 'Options': 'inline label - visible with data', });
 lyr_GiffordHillParcelBoundary_7.set('fieldLabels', {'fid': 'hidden field', 'Address': 'inline label - visible with data', 'Gross_Ha': 'inline label - visible with data', 'Zoning': 'inline label - visible with data', 'Gifford Hill Lands': 'hidden field', 'NDH': 'inline label - visible with data', });
