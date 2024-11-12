@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([15493305.638403, -4189085.917492, 15506235.792946, -4181352.801291]);
+//ol.proj.get("EPSG:3857").setExtent([15493170.861803, -4189707.871672, 15507254.401884, -4181284.952084]);
 var wms_layers = [];
 
 
@@ -76,9 +76,9 @@ var lyr_MasterplanSubPrecint1BBoundary_5 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_MasterplanSubPrecint1BBoundary_5, 
                 style: style_MasterplanSubPrecint1BBoundary_5,
-                popuplayertitle: "Masterplan Sub-Precint 1B Boundary",
+                popuplayertitle: "Masterplan Sub Precint 1B Boundary",
                 interactive: false,
-                title: '<img src="styles/legend/MasterplanSubPrecint1BBoundary_5.png" /> Masterplan Sub-Precint 1B Boundary'
+                title: '<img src="styles/legend/MasterplanSubPrecint1BBoundary_5.png" /> Masterplan Sub Precint 1B Boundary'
             });
 var format_AffordableHousing_6 = new ol.format.GeoJSON();
 var features_AffordableHousing_6 = format_AffordableHousing_6.readFeatures(json_AffordableHousing_6, 
