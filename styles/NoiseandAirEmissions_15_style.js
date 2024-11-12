@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_MasterplanPrecint1BBoundary_4 = function(feature, resolution){
+var style_NoiseandAirEmissions_15 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_MasterplanPrecint1BBoundary_4 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,0,4,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 4.787999999999999}),fill: new ol.style.Fill({color: 'rgba(239,239,239,0.5019607843137255)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 7.6}),fill: new ol.style.Fill({color: 'rgba(205,170,102,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

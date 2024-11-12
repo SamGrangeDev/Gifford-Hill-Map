@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_ProjectOwned_Parcels_6 = function(feature, resolution){
+var style_NonstopCorridor_16 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,8 +9,8 @@ var style_ProjectOwned_Parcels_6 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "13.0px \'Rockwell\', sans-serif";
-    var labelFill = "#323232";
+    var labelFont = "10px, sans-serif";
+    var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
@@ -21,7 +21,7 @@ var style_ProjectOwned_Parcels_6 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(6,50,131,0.5019607843137255)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 7.6}),fill: new ol.style.Fill({color: 'rgba(205,205,102,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
