@@ -80,20 +80,20 @@ var lyr_Masterplansubprecinct_1B_5 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/Masterplansubprecinct_1B_5.png" /> Masterplan sub precinct_1B'
             });
-var format_AffordableHousing_6 = new ol.format.GeoJSON();
-var features_AffordableHousing_6 = format_AffordableHousing_6.readFeatures(json_AffordableHousing_6, 
+var format_Affordablehousing_6 = new ol.format.GeoJSON();
+var features_Affordablehousing_6 = format_Affordablehousing_6.readFeatures(json_Affordablehousing_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_AffordableHousing_6 = new ol.source.Vector({
+var jsonSource_Affordablehousing_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_AffordableHousing_6.addFeatures(features_AffordableHousing_6);
-var lyr_AffordableHousing_6 = new ol.layer.Vector({
+jsonSource_Affordablehousing_6.addFeatures(features_Affordablehousing_6);
+var lyr_Affordablehousing_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_AffordableHousing_6, 
-                style: style_AffordableHousing_6,
-                popuplayertitle: "Affordable Housing",
+                source:jsonSource_Affordablehousing_6, 
+                style: style_Affordablehousing_6,
+                popuplayertitle: "Affordable housing",
                 interactive: false,
-                title: '<img src="styles/legend/AffordableHousing_6.png" /> Affordable Housing'
+                title: '<img src="styles/legend/Affordablehousing_6.png" /> Affordable housing'
             });
 var format_EnvironmentandFoodProductionArea_7 = new ol.format.GeoJSON();
 var features_EnvironmentandFoodProductionArea_7 = format_EnvironmentandFoodProductionArea_7.readFeatures(json_EnvironmentandFoodProductionArea_7, 
@@ -136,9 +136,9 @@ var lyr_HazardsBushfireGeneralRisk_9 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_HazardsBushfireGeneralRisk_9, 
                 style: style_HazardsBushfireGeneralRisk_9,
-                popuplayertitle: "Hazards (Bushfire - General Risk)",
+                popuplayertitle: "Hazards Bushfire General Risk",
                 interactive: false,
-                title: '<img src="styles/legend/HazardsBushfireGeneralRisk_9.png" /> Hazards (Bushfire - General Risk)'
+                title: '<img src="styles/legend/HazardsBushfireGeneralRisk_9.png" /> Hazards Bushfire General Risk'
             });
 var format_HazardsBushfireMediumRisk_10 = new ol.format.GeoJSON();
 var features_HazardsBushfireMediumRisk_10 = format_HazardsBushfireMediumRisk_10.readFeatures(json_HazardsBushfireMediumRisk_10, 
@@ -151,9 +151,9 @@ var lyr_HazardsBushfireMediumRisk_10 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_HazardsBushfireMediumRisk_10, 
                 style: style_HazardsBushfireMediumRisk_10,
-                popuplayertitle: "Hazards (Bushfire - Medium Risk)",
+                popuplayertitle: "Hazards Bushfire Medium Risk",
                 interactive: false,
-                title: '<img src="styles/legend/HazardsBushfireMediumRisk_10.png" /> Hazards (Bushfire - Medium Risk)'
+                title: '<img src="styles/legend/HazardsBushfireMediumRisk_10.png" /> Hazards Bushfire Medium Risk'
             });
 var format_LimitedLandDivision_11 = new ol.format.GeoJSON();
 var features_LimitedLandDivision_11 = format_LimitedLandDivision_11.readFeatures(json_LimitedLandDivision_11, 
@@ -400,7 +400,7 @@ var lyr_GiffordHillParcelBoundary_26 = new ol.layer.Vector({
                 title: '<img src="styles/legend/GiffordHillParcelBoundary_26.png" /> Gifford Hill Parcel Boundary'
             });
 var group_Overlay = new ol.layer.Group({
-                                layers: [lyr_AffordableHousing_6,lyr_EnvironmentandFoodProductionArea_7,lyr_GasandLiquidPetroleumPipelines_8,lyr_HazardsBushfireGeneralRisk_9,lyr_HazardsBushfireMediumRisk_10,lyr_LimitedLandDivision_11,lyr_MajorUrbanTransportRoutes_12,lyr_MurrayDarlingBasin_13,lyr_NativeVegetation_14,lyr_NoiseandAirEmissions_15,lyr_NonstopCorridor_16,lyr_PrescribedWaterResourcesArea_17,lyr_SignificantLandscapeProtection_18,lyr_StateSignificantNativeVegetation_19,lyr_TrafficGeneratingDevelopment_20,lyr_WaterResources_21,lyr_AdelaideHillsWasteManagementAuthorityBuffer_22,],
+                                layers: [lyr_Affordablehousing_6,lyr_EnvironmentandFoodProductionArea_7,lyr_GasandLiquidPetroleumPipelines_8,lyr_HazardsBushfireGeneralRisk_9,lyr_HazardsBushfireMediumRisk_10,lyr_LimitedLandDivision_11,lyr_MajorUrbanTransportRoutes_12,lyr_MurrayDarlingBasin_13,lyr_NativeVegetation_14,lyr_NoiseandAirEmissions_15,lyr_NonstopCorridor_16,lyr_PrescribedWaterResourcesArea_17,lyr_SignificantLandscapeProtection_18,lyr_StateSignificantNativeVegetation_19,lyr_TrafficGeneratingDevelopment_20,lyr_WaterResources_21,lyr_AdelaideHillsWasteManagementAuthorityBuffer_22,],
                                 fold: "open",
                                 title: "Overlay"});
 var group_Masterplans = new ol.layer.Group({
@@ -412,10 +412,10 @@ var group_BaseLayer = new ol.layer.Group({
                                 fold: "open",
                                 title: "Base Layer"});
 
-lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_MurrayBridgeStructurePlan_2.setVisible(false);lyr_GiffordHillConceptMasterplan_3.setVisible(false);lyr_GHConceptMasterplanPrecinct1A_4.setVisible(false);lyr_Masterplansubprecinct_1B_5.setVisible(false);lyr_AffordableHousing_6.setVisible(false);lyr_EnvironmentandFoodProductionArea_7.setVisible(false);lyr_GasandLiquidPetroleumPipelines_8.setVisible(false);lyr_HazardsBushfireGeneralRisk_9.setVisible(false);lyr_HazardsBushfireMediumRisk_10.setVisible(false);lyr_LimitedLandDivision_11.setVisible(false);lyr_MajorUrbanTransportRoutes_12.setVisible(false);lyr_MurrayDarlingBasin_13.setVisible(false);lyr_NativeVegetation_14.setVisible(false);lyr_NoiseandAirEmissions_15.setVisible(false);lyr_NonstopCorridor_16.setVisible(false);lyr_PrescribedWaterResourcesArea_17.setVisible(false);lyr_SignificantLandscapeProtection_18.setVisible(false);lyr_StateSignificantNativeVegetation_19.setVisible(false);lyr_TrafficGeneratingDevelopment_20.setVisible(false);lyr_WaterResources_21.setVisible(false);lyr_AdelaideHillsWasteManagementAuthorityBuffer_22.setVisible(false);lyr_Zoning_23.setVisible(false);lyr_WWTF_Potable_Basins_24.setVisible(false);lyr_ProjectOwnedParcels_25.setVisible(true);lyr_GiffordHillParcelBoundary_26.setVisible(true);
+lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_MurrayBridgeStructurePlan_2.setVisible(false);lyr_GiffordHillConceptMasterplan_3.setVisible(false);lyr_GHConceptMasterplanPrecinct1A_4.setVisible(false);lyr_Masterplansubprecinct_1B_5.setVisible(false);lyr_Affordablehousing_6.setVisible(false);lyr_EnvironmentandFoodProductionArea_7.setVisible(false);lyr_GasandLiquidPetroleumPipelines_8.setVisible(false);lyr_HazardsBushfireGeneralRisk_9.setVisible(false);lyr_HazardsBushfireMediumRisk_10.setVisible(false);lyr_LimitedLandDivision_11.setVisible(false);lyr_MajorUrbanTransportRoutes_12.setVisible(false);lyr_MurrayDarlingBasin_13.setVisible(false);lyr_NativeVegetation_14.setVisible(false);lyr_NoiseandAirEmissions_15.setVisible(false);lyr_NonstopCorridor_16.setVisible(false);lyr_PrescribedWaterResourcesArea_17.setVisible(false);lyr_SignificantLandscapeProtection_18.setVisible(false);lyr_StateSignificantNativeVegetation_19.setVisible(false);lyr_TrafficGeneratingDevelopment_20.setVisible(false);lyr_WaterResources_21.setVisible(false);lyr_AdelaideHillsWasteManagementAuthorityBuffer_22.setVisible(false);lyr_Zoning_23.setVisible(false);lyr_WWTF_Potable_Basins_24.setVisible(false);lyr_ProjectOwnedParcels_25.setVisible(true);lyr_GiffordHillParcelBoundary_26.setVisible(true);
 var layersList = [group_BaseLayer,group_Masterplans,group_Overlay,lyr_Zoning_23,lyr_WWTF_Potable_Basins_24,lyr_ProjectOwnedParcels_25,lyr_GiffordHillParcelBoundary_26];
 lyr_Masterplansubprecinct_1B_5.set('fieldAliases', {'id': 'id', });
-lyr_AffordableHousing_6.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'id': 'id', 'name': 'name', 'description': 'description', 'value': 'value', 'legalstartdate': 'Legal Start Date', 'legalenddate': 'Legal End Date', 'status': 'status', 'st_area(shape)': 'st_area(shape)', 'st_perimeter(shape)': 'st_perimeter(shape)', 'systemstartdate': 'System Start Date', 'systemenddate': 'System End Date', });
+lyr_Affordablehousing_6.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'id': 'id', 'name': 'name', 'description': 'description', 'value': 'value', 'legalstartdate': 'Legal Start Date', 'legalenddate': 'Legal End Date', 'status': 'status', 'st_area(shape)': 'st_area(shape)', 'st_perimeter(shape)': 'st_perimeter(shape)', 'systemstartdate': 'System Start Date', 'systemenddate': 'System End Date', });
 lyr_EnvironmentandFoodProductionArea_7.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'id': 'id', 'name': 'name', 'description': 'description', 'value': 'value', 'legalstartdate': 'Legal Start Date', 'legalenddate': 'Legal End Date', 'status': 'status', 'st_area(shape)': 'st_area(shape)', 'st_perimeter(shape)': 'st_perimeter(shape)', 'systemstartdate': 'System Start Date', 'systemenddate': 'System End Date', });
 lyr_GasandLiquidPetroleumPipelines_8.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'id': 'id', 'name': 'name', 'description': 'description', 'value': 'value', 'legalstartdate': 'Legal Start Date', 'legalenddate': 'Legal End Date', 'status': 'status', 'st_area(shape)': 'st_area(shape)', 'st_perimeter(shape)': 'st_perimeter(shape)', 'systemstartdate': 'System Start Date', 'systemenddate': 'System End Date', });
 lyr_HazardsBushfireGeneralRisk_9.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'id': 'id', 'name': 'name', 'description': 'description', 'value': 'value', 'legalstartdate': 'Legal Start Date', 'legalenddate': 'Legal End Date', 'status': 'status', 'st_area(shape)': 'st_area(shape)', 'st_perimeter(shape)': 'st_perimeter(shape)', 'systemstartdate': 'System Start Date', 'systemenddate': 'System End Date', });
@@ -436,7 +436,7 @@ lyr_Zoning_23.set('fieldAliases', {'id': 'id', 'Land use': 'Land use', });
 lyr_ProjectOwnedParcels_25.set('fieldAliases', {'Address': 'Address', 'Zoning': 'Zoning', 'Options': 'Options', });
 lyr_GiffordHillParcelBoundary_26.set('fieldAliases', {'fid': 'fid', 'Address': 'Address', 'Gross_Ha': 'Gross_Ha', 'Zoning': 'Zoning', 'Gifford Hill Lands': 'Gifford Hill Lands', 'NDH': 'NDH', });
 lyr_Masterplansubprecinct_1B_5.set('fieldImages', {'id': 'TextEdit', });
-lyr_AffordableHousing_6.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'id': 'TextEdit', 'name': 'TextEdit', 'description': 'TextEdit', 'value': 'TextEdit', 'legalstartdate': 'DateTime', 'legalenddate': 'DateTime', 'status': 'Range', 'st_area(shape)': 'TextEdit', 'st_perimeter(shape)': 'TextEdit', 'systemstartdate': 'DateTime', 'systemenddate': 'DateTime', });
+lyr_Affordablehousing_6.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'id': 'TextEdit', 'name': 'TextEdit', 'description': 'TextEdit', 'value': 'TextEdit', 'legalstartdate': 'DateTime', 'legalenddate': 'DateTime', 'status': 'Range', 'st_area(shape)': 'TextEdit', 'st_perimeter(shape)': 'TextEdit', 'systemstartdate': 'DateTime', 'systemenddate': 'DateTime', });
 lyr_EnvironmentandFoodProductionArea_7.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'id': 'TextEdit', 'name': 'TextEdit', 'description': 'TextEdit', 'value': 'TextEdit', 'legalstartdate': 'DateTime', 'legalenddate': 'DateTime', 'status': 'Range', 'st_area(shape)': 'TextEdit', 'st_perimeter(shape)': 'TextEdit', 'systemstartdate': 'DateTime', 'systemenddate': 'DateTime', });
 lyr_GasandLiquidPetroleumPipelines_8.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'id': 'TextEdit', 'name': 'TextEdit', 'description': 'TextEdit', 'value': 'TextEdit', 'legalstartdate': 'DateTime', 'legalenddate': 'DateTime', 'status': 'Range', 'st_area(shape)': 'TextEdit', 'st_perimeter(shape)': 'TextEdit', 'systemstartdate': 'DateTime', 'systemenddate': 'DateTime', });
 lyr_HazardsBushfireGeneralRisk_9.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'id': 'TextEdit', 'name': 'TextEdit', 'description': 'TextEdit', 'value': 'TextEdit', 'legalstartdate': 'DateTime', 'legalenddate': 'DateTime', 'status': 'Range', 'st_area(shape)': 'TextEdit', 'st_perimeter(shape)': 'TextEdit', 'systemstartdate': 'DateTime', 'systemenddate': 'DateTime', });
@@ -457,7 +457,7 @@ lyr_Zoning_23.set('fieldImages', {'id': 'TextEdit', 'Land use': 'TextEdit', });
 lyr_ProjectOwnedParcels_25.set('fieldImages', {'Address': 'TextEdit', 'Zoning': 'TextEdit', 'Options': 'TextEdit', });
 lyr_GiffordHillParcelBoundary_26.set('fieldImages', {'fid': 'TextEdit', 'Address': 'TextEdit', 'Gross_Ha': 'TextEdit', 'Zoning': 'TextEdit', 'Gifford Hill Lands': 'TextEdit', 'NDH': 'TextEdit', });
 lyr_Masterplansubprecinct_1B_5.set('fieldLabels', {'id': 'hidden field', });
-lyr_AffordableHousing_6.set('fieldLabels', {'fid': 'no label', 'objectid': 'no label', 'id': 'no label', 'name': 'no label', 'description': 'no label', 'value': 'no label', 'legalstartdate': 'no label', 'legalenddate': 'no label', 'status': 'no label', 'st_area(shape)': 'no label', 'st_perimeter(shape)': 'no label', 'systemstartdate': 'no label', 'systemenddate': 'no label', });
+lyr_Affordablehousing_6.set('fieldLabels', {'fid': 'no label', 'objectid': 'no label', 'id': 'no label', 'name': 'no label', 'description': 'no label', 'value': 'no label', 'legalstartdate': 'no label', 'legalenddate': 'no label', 'status': 'no label', 'st_area(shape)': 'no label', 'st_perimeter(shape)': 'no label', 'systemstartdate': 'no label', 'systemenddate': 'no label', });
 lyr_EnvironmentandFoodProductionArea_7.set('fieldLabels', {'fid': 'no label', 'objectid': 'no label', 'id': 'no label', 'name': 'no label', 'description': 'no label', 'value': 'no label', 'legalstartdate': 'no label', 'legalenddate': 'no label', 'status': 'no label', 'st_area(shape)': 'no label', 'st_perimeter(shape)': 'no label', 'systemstartdate': 'no label', 'systemenddate': 'no label', });
 lyr_GasandLiquidPetroleumPipelines_8.set('fieldLabels', {'fid': 'no label', 'objectid': 'no label', 'id': 'no label', 'name': 'no label', 'description': 'no label', 'value': 'no label', 'legalstartdate': 'no label', 'legalenddate': 'no label', 'status': 'no label', 'st_area(shape)': 'no label', 'st_perimeter(shape)': 'no label', 'systemstartdate': 'no label', 'systemenddate': 'no label', });
 lyr_HazardsBushfireGeneralRisk_9.set('fieldLabels', {'fid': 'no label', 'objectid': 'no label', 'id': 'no label', 'name': 'no label', 'description': 'no label', 'value': 'no label', 'legalstartdate': 'no label', 'legalenddate': 'no label', 'status': 'no label', 'st_area(shape)': 'no label', 'st_perimeter(shape)': 'no label', 'systemstartdate': 'no label', 'systemenddate': 'no label', });
